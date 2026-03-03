@@ -1,26 +1,76 @@
-/* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
-*/
+/* Color Palette */
+:root {
+    --color-primary: #1f6f8b;
+    --color-secondary: #3b5b92;
+    --color-third: #6b705c;
+    --color-fourth: #ebbc957c;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* Global styles 
 ------------------------------------*/
 body {
-    /*background: lightblue;*/
+    background-color: var(--color-fourth);
+    width: 100vw;
+    min-height: 100vh;
+    
 }
 
 
 /* Header & Footer 
 ------------------------------------*/
+header {
+    background: linear-gradient(-45deg, var(--color-primary), var(--color-third));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    letter-spacing: 2px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+footer {
+    background: linear-gradient(45deg, var(--color-third), var(--color-secondary));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
 
+/* Main  */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main h2 {
+    border-bottom: 2px solid var(--color-primary);
+    padding: 1rem 0;
+}
 
 /* Work Experience
 ------------------------------------*/
-
+#workExperience .workItem {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
 
 
 /* Education
 ------------------------------------*/
+#education {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
